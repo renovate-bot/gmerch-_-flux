@@ -5812,7 +5812,7 @@ webhooks:
 ---
 apiVersion: v1
 data:
-  custom.yaml: |
+  custom.yaml:
     apiVersion: 1
     datasources:
     - name: Proxmox
@@ -5830,6 +5830,5 @@ data:
       editable: true
 kind: ConfigMap
 metadata:
-  creationTimestamp: null
   name: influx-grafana-datasource
    namespace: monitoring
