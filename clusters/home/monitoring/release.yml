@@ -2015,7 +2015,7 @@ spec:
     spec:
       containers:
         - name: kube-prometheus-stack
-          image: "quay.io/prometheus-operator/prometheus-operator:v0.66.0"
+          image: "quay.io/prometheus-operator/prometheus-operator:v0.67.1"
           imagePullPolicy: "IfNotPresent"
           args:
             - --kubelet-service=kube-system/prometheus-kubelet
