@@ -4,6 +4,6 @@
     "config:recommended", ":dependencyDashboard"
   ],
   "kubernetes": {
-    "fileMatch": ["\\.yml$"]
+    "fileMatch": ["\\.yml$", "\\.yaml$"]
   }
 }
