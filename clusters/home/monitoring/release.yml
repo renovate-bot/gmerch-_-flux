@@ -5832,3 +5832,4 @@ kind: ConfigMap
 metadata:
   creationTimestamp: null
   name: influx-grafana-datasource
+   namespace: monitoring
