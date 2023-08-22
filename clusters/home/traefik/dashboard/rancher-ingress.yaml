@@ -1,0 +1,14 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: rancher-dashboard
+  annotations:
+    kubernetes.io/ingress.class: traefik-internal
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - match: Host(`rancher.local.gemms.network`)
+      kind: Rule
+  tls:
+    secretName: local-gemms-network-tls
