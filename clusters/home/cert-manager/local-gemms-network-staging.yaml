@@ -2,7 +2,7 @@
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: local-gemms-network
+  name: local-gemms-network-staging
   namespace: default
 spec:
   secretName: local-gemms-network-staging-tls
