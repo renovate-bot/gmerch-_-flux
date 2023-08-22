@@ -5809,4 +5809,26 @@ webhooks:
     timeoutSeconds: 10
     admissionReviewVersions: ["v1", "v1beta1"]
     sideEffects: None
-
+---
+apiVersion: v1
+data:
+  custom.yaml: |
+    apiVersion: 1
+    datasources:
+    - name: Proxmox
+      type: InfluxDB
+      url: http://portainer.local.gemms.network:8086
+      access: proxy
+      isDefault: false
+      basicAuth: false
+      organization: "lapis-homelab"
+      defaultBucket: "proxmox"
+      token: influxdb-token
+      withCredentials: false
+      isDefault: false
+      version: 1
+      editable: true
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: influx-grafana-datasource
