@@ -220,7 +220,6 @@ data:
       type: influxdb
       uid: influxdb
       url: http://portainer.local.gemms.network:8086
-      access: proxy
       editable: true
       isDefault: false
       basicAuth: false
