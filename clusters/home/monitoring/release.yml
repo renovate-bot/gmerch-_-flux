@@ -218,16 +218,18 @@ data:
         implementation: prometheus
     - name: InfluxDB
       type: influxdb
-      uid: proxmox
+      uid: influxdb
       url: http://portainer.local.gemms.network:8086
       access: proxy
+      editable: true
       isDefault: false
+      basicAuth: false
       secureJSON:
         token:influxdb-token
       jsonData:
         version: Flux
-        organization: 'lapis-homelab'
-        defaultBucket: 'proxmox'
+        organization: lapis-homelab
+        defaultBucket: proxmox
         tlsSkipVerify: true
         min_time_interval: 10s
         max_series: 1000
