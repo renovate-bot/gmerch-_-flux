@@ -12,7 +12,5 @@ spec:
     - match: Host(`uptime.local.gemms.network`)
       kind: Rule
       services:
-        - name: uptime-kuma
-          port: 3001
   tls:
     secretName: local-gemms-network-tls
