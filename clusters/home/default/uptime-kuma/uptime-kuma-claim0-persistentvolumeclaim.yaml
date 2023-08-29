@@ -5,6 +5,7 @@ metadata:
   labels:
     io.kompose.service: uptime-kuma-claim0
   name: uptime-kuma-claim0
+  namespace: defaul
 spec:
   accessModes:
     - ReadWriteOnce
