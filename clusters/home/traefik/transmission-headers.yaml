@@ -5,4 +5,5 @@ metadata:
   namespace: default
 spec:
   headers:
-    X-Transmission-Session-Id: F7dFFxYEOZNHLj9325dkg9WSfasqX7a4Cfv3whRrrxXZ2MtC
+    customRequestHeaders:
+      X-Transmission-Session-Id: F7dFFxYEOZNHLj9325dkg9WSfasqX7a4Cfv3whRrrxXZ2MtC
