@@ -1,0 +1,8 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: transmission-headers
+  namespace: default
+spec:
+  headers:
+    X-Transmission-Session-Id: F7dFFxYEOZNHLj9325dkg9WSf    asqX7a4Cfv3whRrrxXZ2MtC
