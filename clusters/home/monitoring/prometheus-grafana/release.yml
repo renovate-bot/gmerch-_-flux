@@ -1861,7 +1861,7 @@ spec:
             - name: sc-datasources-volume
               mountPath: "/etc/grafana/provisioning/datasources"
         - name: grafana
-          image: "docker.io/grafana/grafana:10.1.0"
+          image: "docker.io/grafana/grafana:10.1.1"
           imagePullPolicy: IfNotPresent
           securityContext:
             allowPrivilegeEscalation: false
@@ -1991,7 +1991,7 @@ spec:
         - --port=8080
         - --resources=certificatesigningrequests,configmaps,cronjobs,daemonsets,deployments,endpoints,horizontalpodautoscalers,ingresses,jobs,leases,limitranges,mutatingwebhookconfigurations,namespaces,networkpolicies,nodes,persistentvolumeclaims,persistentvolumes,poddisruptionbudgets,pods,replicasets,replicationcontrollers,resourcequotas,secrets,services,statefulsets,storageclasses,validatingwebhookconfigurations,volumeattachments
         imagePullPolicy: IfNotPresent
-        image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.9.2
+        image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.10.0
         ports:
         - containerPort: 8080
           name: "http"
@@ -2053,7 +2053,7 @@ spec:
     spec:
       containers:
         - name: kube-prometheus-stack
-          image: "quay.io/prometheus-operator/prometheus-operator:v0.67.1"
+          image: "quay.io/prometheus-operator/prometheus-operator:v0.68.0"
           imagePullPolicy: "IfNotPresent"
           args:
             - --kubelet-service=kube-system/prometheus-kubelet
@@ -2306,7 +2306,7 @@ spec:
         port: http-web
         pathPrefix: "/"
         apiVersion: v2
-  image: "quay.io/prometheus/prometheus:v2.46.0"
+  image: "quay.io/prometheus/prometheus:v2.47.0"
   version: v2.45.0
   replicaExternalLabelName: "replica"
   externalUrl: http://prometheus-prometheus.monitoring:9090
