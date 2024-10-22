@@ -2306,7 +2306,7 @@ spec:
         port: http-web
         pathPrefix: "/"
         apiVersion: v2
-  image: "quay.io/prometheus/prometheus:v2.47.0"
+  image: "quay.io/prometheus/prometheus:v2.55.0"
   version: v2.45.0
   replicaExternalLabelName: "replica"
   externalUrl: http://prometheus-prometheus.monitoring:9090
